@@ -35,6 +35,21 @@ body {
   height: 0;
 }
 
+.tv-antenna {
+  max-width: 12rem;
+  width: 100%;
+}
+
+.tv-base {
+  max-width: 30rem;
+  width: 100%;
+}
+
+.tv-base-img, .tv-antenna-img {
+  display: block;
+  width: 100%;
+}
+
 .slider-wrapper {
   display: flex;
   flex-direction: column;
