@@ -8,11 +8,125 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
   background-image: url('./assets/pattern.jpg');
   background-repeat: repeat;
+}
+
+.container {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.input {
+  width: 0;
+  height: 0;
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 42.5rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background-color: #000;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+  row-gap: 1.5rem;
+}
+
+.images-wrapper {
+  overflow: hidden;
+  box-shadow: 0 0 1.3rem #fff;
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  -ms-border-radius: 0.625rem;
+  -o-border-radius: 0.625rem;
+}
+
+.slider {
+  display: flex;
+  width: calc(100% * 4);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.slide-img {
+  display: block;
+  max-width: 37.5rem;
+  width: 100%;
+}
+
+.description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.text-wrapper {
+  width: 75%;
+  overflow: hidden;
+}
+
+.slider-text {
+  display: flex;
+  width: calc(100% * 4);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.comment {
+  width: calc(100% * 4);
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.label-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 2.1rem;
+  cursor: pointer;
+}
+
+.radio-btn {
+  display: block;
+  height: 0.9rem;
+  width: 0.9rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #2ea4d9;
+  border: 0.15rem solid #2ea4d9;
 }
