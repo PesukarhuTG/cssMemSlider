@@ -16,6 +16,45 @@ body {
   background-repeat: repeat;
 }
 
+.running-line-wrapper {
+  margin: 1rem 0;
+	overflow: hidden;
+}
+
+.running-text {
+	background-color: #2ea4d9;
+	padding: 0.7rem 0;
+  z-index: 2;
+}
+
+.running-text i {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  white-space: nowrap;
+  color: #fff;
+  animation: runningLineX 10s ease-in-out alternate-reverse infinite;
+  -webkit-animation: runningLineX 10s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes runningLineX {
+	0% { 
+    transform: translateX(-100%); 
+    -webkit-transform: translateX(-100%); 
+    -moz-transform: translateX(-100%); 
+    -ms-transform: translateX(-100%); 
+    -o-transform: translateX(-100%); 
+  }
+	100% { 
+    transform: translateX(0); 
+    -webkit-transform: translateX(0); 
+    -moz-transform: translateX(0); 
+    -ms-transform: translateX(0); 
+    -o-transform: translateX(0); 
+  }
+}
+
 .container {
   max-width: 62rem;
   margin: 0 auto;
@@ -115,6 +154,7 @@ body {
 }
 
 .comment {
+  font-size: 1.2rem;
   width: calc(100% * 4);
 }
 
