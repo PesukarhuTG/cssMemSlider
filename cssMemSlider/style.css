@@ -238,3 +238,53 @@ body {
   background-color: #ea7fa9;
   border: 0.15rem solid #ea7fa9;
 }
+
+@media screen and  (max-width: 768px) {
+  .main {
+    padding-top: 4rem;
+  }
+
+  .container {
+    padding: 0 0.625rem;
+  }
+
+  .slider-wrapper {
+    max-width: 21.25rem;
+    padding: 1.25rem;
+  }
+
+  .tv-base {
+    max-width: 20rem;
+  }
+
+  .slide-img {
+    max-width: 18.75rem;
+  }
+
+  .description-wrapper {
+    flex-direction: column-reverse;
+    row-gap: 1.5rem;
+  }
+
+  .text-wrapper, .slider-buttons {
+    width: 100%;
+  }
+
+  .slider-buttons {
+    justify-content: center;
+  }
+}
+
+@media screen and  (max-width: 420px) {
+  .slider-wrapper {
+    max-width: 18.1rem;
+  }
+
+  .slide-img {
+    max-width: 15.6rem;
+  }
+
+  .tv-base {
+    max-width: 18rem;
+  }
+}
