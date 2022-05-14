@@ -1,3 +1,11 @@
+:root {
+  --font-color: #fff;
+  --primary-color: #2ea4d9;
+  --active-color: #ea7fa9;
+  --hover-color: #fff;
+  --background-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,19 +19,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #fff;
+  color: var(--font-color);
   background-image: url('./assets/pattern.jpg');
   background-repeat: repeat;
 }
 
 .running-line-wrapper {
   margin: 1rem 0;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .running-text {
-	background-color: #2ea4d9;
-	padding: 0.7rem 0;
+  padding: 0.7rem 0;
+  background-color: var(--primary-color);
   z-index: 2;
 }
 
@@ -33,20 +41,20 @@ body {
   font-weight: 700;
   font-style: normal;
   white-space: nowrap;
-  color: #fff;
+  color: var(--font-color);
   animation: runningLineX 10s ease-in-out alternate-reverse infinite;
   -webkit-animation: runningLineX 10s ease-in-out alternate-reverse infinite;
 }
 
 @keyframes runningLineX {
-	0% { 
+  0% { 
     transform: translateX(-100%); 
     -webkit-transform: translateX(-100%); 
     -moz-transform: translateX(-100%); 
     -ms-transform: translateX(-100%); 
     -o-transform: translateX(-100%); 
   }
-	100% { 
+  100% { 
     transform: translateX(0); 
     -webkit-transform: translateX(0); 
     -moz-transform: translateX(0); 
@@ -96,7 +104,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 2.5rem;
-  background-color: #000;
+  background-color: var(--background-color);
   border-radius: 2.5rem;
   -webkit-border-radius: 2.5rem;
   -moz-border-radius: 2.5rem;
@@ -107,7 +115,7 @@ body {
 
 .images-wrapper {
   overflow: hidden;
-  box-shadow: 0 0 1.3rem #fff;
+  box-shadow: 0 0 1.3rem var(--font-color);;
   border-radius: 0.625rem;
   -webkit-border-radius: 0.625rem;
   -moz-border-radius: 0.625rem;
@@ -155,7 +163,7 @@ body {
 
 .comment {
   font-size: 1.2rem;
-  width: calc(100% * 4);
+  width: 100%;
 }
 
 .slider-buttons {
@@ -182,8 +190,8 @@ body {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: #2ea4d9;
-  border: 0.15rem solid #2ea4d9;
+  background-color: var(--primary-color);
+  border: 0.15rem solid var(--primary-color);
 }
 
 #input-01:checked ~ .slider-wrapper .images-wrapper .slider,
@@ -230,13 +238,13 @@ body {
 }
 
 .label-btn:hover .radio-btn {
-  background-color: #fff;
-  border: 0.15rem solid #fff;
+  background-color: var(--hover-color);
+  border: 0.15rem solid var(--hover-color);
 }
 
 .label-btn:active .radio-btn {
-  background-color: #ea7fa9;
-  border: 0.15rem solid #ea7fa9;
+  background-color: var(--active-color);
+  border: 0.15rem solid var(--active-color);
 }
 
 @media screen and  (max-width: 768px) {
@@ -263,7 +271,7 @@ body {
 
   .description-wrapper {
     flex-direction: column-reverse;
-    row-gap: 1.5rem;
+    row-gap: 1.1rem;
   }
 
   .text-wrapper, .slider-buttons {
